@@ -1,0 +1,18 @@
+<div class="container tp">
+  <div class="row">
+  <div class="col-md-12">
+    <p class="heading">--<< ADD NEW SERVERS(NOT REALLY) >>--</p>
+    <label>Server Name</label>
+    <input type="text" class="form-control" [(ngModel)]="newServerName">
+    <label>Server Content</label>
+    <input type="text" class="form-control" [(ngModel)]="newServerContent">
+    <br>
+    <button
+      class="btn btn-primary"
+      (click)="onAddServer()" disabled>Add Custom</button>
+    <button
+      class="btn btn-primary"
+      (click)="onAddBlueprint()" disabled>Add Default</button>
+  </div>
+</div>
+</div>
