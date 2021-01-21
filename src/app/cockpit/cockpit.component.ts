@@ -16,12 +16,14 @@ export class CockpitComponent implements OnInit {
     this.serverCreated.emit({
       serverName: this.newServerName,
       serverContent: this.newServerContent
-    })
+    });
   }
   onAddBlueprint(){
+    //console.log('debug blueprint');
     this.bluePrintCreated.emit({
       serverName: 'SAMPLE',
       serverContent: 'LOREM TOTEM'
-    })
+    });
+    //console.log(this)
   }
 }
